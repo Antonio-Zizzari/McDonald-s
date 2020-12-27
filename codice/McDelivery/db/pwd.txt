@@ -1,0 +1,11 @@
+('albertobattaglia@gmail.com','Ciao123456'),/* utente consumatore */
+('tonywindow99@virgilio.it','soloReti4ever'), /* utente consumatore */
+
+('zizzariantonio@alice.it','Pizza7777'), /*utente responsabile del personale */
+('simonegiglio@hotmail.com','Laurea99'), /*utente responsabile del personale */
+
+('giusepptorn@gmail.it','Cyberpunk2077'),/* utente product manager*/
+('giosorrent@gmail.it','Tristezza00');/* utente product manager*/
+
+('giancarlosavoiardo@gmail.com','pastacolTonnoh99'),  /* corriere */
+('pinogiordy@gmail.org','MiPiaceLaNutella22'), /* corriere */
