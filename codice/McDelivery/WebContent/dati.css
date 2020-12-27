@@ -1,0 +1,67 @@
+.dati {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: auto;
+}
+
+.logout {
+  width: 100%;
+  max-width: 150px;
+  padding: 15px;
+  margin: auto;
+}
+
+.a-box {
+
+  margin: 50px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+	
+  flex-direction: column;
+}
+.linea{
+  width: 100%;
+  text-align:center;
+  padding: 20px 30px;
+  height: 200px;
+  border-bottom:  1px solid #E1E8EE;
+}
+.item {
+  width: 100%;
+  text-align:center;
+  padding: 20px 30px;
+  height: 120px;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.testo{
+	
+    font-size: 24px;
+}
+
+.descrizione{
+	color: #5E6977;
+    font-size: 18px;
+}
+
+/* Schermo piccolo */
+@media only screen and (max-width: 900px) {
+  .dati {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 15px 15px 95px;
+  margin: auto;
+}
+}
+
+/* Schermo grande */
+@media only screen and (max-width: 600px) {
+	  .dati {
+	  width: 100%;
+	  max-width: 600px;
+	  padding: 15px;
+	  margin: auto;
+	}
+}

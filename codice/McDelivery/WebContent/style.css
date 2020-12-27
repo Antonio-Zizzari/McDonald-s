@@ -1,0 +1,464 @@
+/*
+  Variabili globali
+*/
+
+
+
+:root {
+  font-size: 16px;
+  font-family: 'Speedee',Arial,Helvetica,sans-serif;
+  --transition-speed: 600ms;
+}
+::selection {
+  background: #ffbc0d;
+  color: white
+}
+/*
+  Davvero devo spiegarti a chi è riferito!?
+*/
+.prodotti{
+  transition: transform .5s;
+
+}
+.prodotti:hover{
+  transform: scale(1.03);
+}
+/*----------------------------------*/
+/* Ho sputato il sangue commentatela da sola sta roba <3*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.h-100:hover .image {
+  opacity: 0.6;
+}
+
+.h-100:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 15px;
+}
+/*----------------------------------*/
+
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Grassetto scroll-bar
+*/
+body::-webkit-scrollbar {
+  width: 0.50rem;
+}
+/*
+  Colore scroll-bar secondario
+*/
+body::-webkit-scrollbar-track {
+  background: #fdf6e3;
+}
+/*
+  Colore scroll-bar primario
+*/
+body::-webkit-scrollbar-thumb {
+  background: #f5e5b8;
+}
+/*
+  Corpo testo
+*/
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+/*
+  H1 della pagina
+*/
+h1 {
+  color: orange;
+  text-align: center;
+  font-size: 3em;
+
+}
+/*
+  Immagini home
+*/
+.container {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.container img {
+  width: 100%;
+  height: auto;
+
+}
+/*
+  Elenco dei 4 prodotti
+*/
+.homeprod {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
+
+}
+
+a.home img{
+  width: 100%;
+  transition: transform .5s;
+}
+
+
+li.spazio img{
+  padding-left: 0;
+}
+
+a.home:hover img{
+  transform: scale(1.03);
+}
+
+/*
+  Footer
+*/
+footer{
+  text-align: center;
+  font-style: oblique;
+  opacity: 0.5;
+  margin-top: 10%;
+  vertical-align: text-bottom;
+  z-index: -2;
+  vertical-align: text-bottom;
+
+}
+
+hr{
+  border: 1px
+  solid orange;
+}
+
+
+
+/*
+  Barra navigazione colore interno
+*/
+.navbar {
+  position: fixed;
+  background-color: #fdf6e3;
+  transition: width 600ms ease;
+  z-index: 100;
+  display:initial; padding: 0;/*Se non setti questi tag, Bootstrap te caga er cazzo come un vecchietto davanti un cantiere */
+}
+/*
+  Barra navigazione margini, testo, ecc.
+*/
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+/*
+  Oggetti barra navigazione
+*/
+.nav-item {
+  width: 100%;
+}
+/*
+  Imposto l'ultimo item in basso (account)
+*/
+.nav-item:last-child {
+  margin-top: auto;
+}
+/*
+  Item top della bar navigation
+*/
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: black;
+  text-decoration: none;/*Tolgo la sottolineatura*/
+  transition: var(--transition-speed);
+
+}
+/*
+  Quando passi sopra gli item della navigation bar
+*/
+.nav-link:hover {
+
+  background: #f5e5b8;
+  color: black;
+
+}
+/*
+  Testo degli item della navigation bar
+*/
+.link-text {
+
+  display: none;
+  margin-left: 1rem;
+
+}
+
+
+/*
+  Immagini svg del navigation menu
+*/
+.nav-link svg {
+  width: 2rem;/* Se cambiato puoi zoommare quando passi sulla barra di navigazione*/
+  min-width: 2rem; /* Grandezza iniziale */
+  margin: 0 1.5rem;
+}
+
+/*
+  navigation bar Colore icone Prodotti
+*/
+#prodotti1.fa-primary {
+  color: #663300;
+}
+/*
+  navigatio bar Colore icone Prodotti
+*/
+#prodotti2.fa-secondary {
+  color: #ff9900;
+}
+/*
+  navigation bar Colore icone Offerte
+*/
+#offerte1.fa-primary {
+  color: white;
+}
+/*
+  navigatio bar Colore icone Offerte
+*/
+#offerte2.fa-secondary {
+  color: red;
+}
+/*
+  navigation bar Colore icone Ristoranti
+*/
+#ristoranti1.fa-primary {
+  color: red;
+}
+/*
+  navigatio bar Colore icone Ristoranti
+*/
+#ristoranti2.fa-secondary {
+  color: green;
+}
+/*
+  navigation bar Colore icone ChiSiamo
+*/
+#carrello1.fa-primary {
+  color: black;
+}
+/*
+  navigatio bar Colore icone ChiSiamo
+*/
+#carrello2.fa-secondary {
+  color: orange;
+}
+/*
+  navigation bar Colore icone account
+*/
+#account1.fa-primary {
+  color: #404040;
+}
+/*
+  navigatio bar Colore icone account
+*/
+#account2.fa-secondary {
+  color: brown;
+
+}
+
+#cerca1.fa-primary {
+  color: black;
+}
+
+#cerca2.fa-secondary {
+  color: brown;
+
+}
+
+#consegne1.fa-primary {
+  color: orange;
+}
+#consegne2.fa-secondary {
+  color: green;
+
+}
+
+
+#admin1.fa-primary {
+  color: brown;
+}
+#admin2.fa-secondary {
+  color: orange;
+
+}
+#assumi1.fa-primary {
+  color: orange;
+}
+#assumi2.fa-secondary {
+  color: green;
+
+}
+#dipendenti1.fa-primary {
+  color: orange;
+}
+#dipendenti2.fa-secondary {
+  color: #553703;
+}
+#setofferte1.fa-primary {
+  color: #009f05;
+}
+#setofferte2.fa-secondary {
+  color: #37d36b;
+}
+#modprod1.fa-primary {
+  color: orange;
+}
+#modprod2.fa-secondary {
+  color: #cccc10;
+
+}
+
+
+
+/* velocità transazione*/
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+/*
+  Item logo
+*/
+.logo {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.35rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  background: #f5e5b8;
+}
+/*
+  Logo effetti
+*/
+.logo svg {
+  transition: var(--transition-speed);
+}
+/*
+  Logo text effetti
+*/
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;/* Faccio partire la scritta da -999 da sinistra */
+  transition: var(--transition-speed);
+}
+/*
+  Effetti immagine svg McDrive
+*/
+.navbar:hover .logo svg {
+  /*Non ne ho perchè gli effetti come rotate ecc fanno cagare*/
+}
+
+/* Schermo piccolo */
+@media only screen and (max-width: 600px) {
+  footer{
+    margin-bottom: 20%;
+  }
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .homeprod {
+    flex-direction: column;
+  }
+}
+
+/* Schermo grande */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+}
