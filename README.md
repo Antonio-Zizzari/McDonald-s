@@ -91,7 +91,6 @@ McDonald-s/
 ├── codice/McDelivery/
 │   ├── db/
 │   │   ├── mcdelivery.sql        # Schema, utente MySQL e dati di esempio
-│   │   └── pwd.txt               # Dati di supporto per gli account di prova
 │   ├── src/it/unisa/
 │   │   ├── bean/                 # JavaBean del dominio
 │   │   ├── control/              # Servlet (controller) e utility SHA-256
